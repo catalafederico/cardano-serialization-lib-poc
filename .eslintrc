@@ -1,0 +1,25 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": ["plugin:@typescript-eslint/recommended"],
+  "rules": {
+    "prettier/prettier": [
+      "error",
+      { "singleQuote": false, "parser": "flow", "trailingComma": "none" }
+    ],
+    "@typescript-eslint/ban-ts-comment": "warn",
+    "comma-dangle": "off",
+    "quotes": ["error", "double"],
+    "unicorn/prevent-abbreviations": [
+      "error",
+      {
+        "checkFilenames": false
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {} // this loads <rootdir>/tsconfig.json to eslint
+    }
+  },
+  "ignorePatterns": ["**/*.d.ts"]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cardano-transactions",
+  "version": "1.0.0",
+  "description": "Cardano transactions test",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "Federico Catalá Ortmann",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "28.1.1",
+    "@typescript-eslint/eslint-plugin": "5.27.1",
+    "eslint": "8.17.0",
+    "jest": "28.1.1",
+    "prettier": "2.6.2",
+    "ts-jest": "28.0.4",
+    "typescript": "4.7.3"
+  },
+  "dependencies": {
+    "@emurgo/cardano-serialization-lib-nodejs": "^11.0.0",
+    "axios": "^0.27.2",
+    "bip39": "^3.0.4",
+    "ts-node": "^10.9.1"
+  }
+}
